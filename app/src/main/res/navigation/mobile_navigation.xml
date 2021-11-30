@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.covid_track_2021.ui.qrCodeScanner.ScannerFragment"
+        android:label="QR-Code Scanner"
+        tools:layout="@layout/fragment_scanner" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.covid_track_2021.ui.dashboard.DashboardFragment"
+        android:label="Validate Code"
+        tools:layout="@layout/fragment_dashboard" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/submissionFragment"
+        android:name="com.example.covid_track_2021.ui.submission.SubmissionFragment"
+        android:label="Submit Contacts"
+        tools:layout="@layout/submission_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.covid_track_2021.ui.settings.SettingsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

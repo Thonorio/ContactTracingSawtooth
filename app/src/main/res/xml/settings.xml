@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Proximity Tracking">
+        <SwitchPreference
+            android:id="@+id/sendContacts"
+            android:defaultValue="true"
+            android:key="sendContacts"
+            android:title="Send proximity contacts" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Location Tracking">
+        <SwitchPreference
+            android:id="@+id/senLocations"
+            android:defaultValue="true"
+            android:key="senLocations"
+            android:title="Send locations visited" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
